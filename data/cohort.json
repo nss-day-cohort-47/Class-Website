@@ -295,5 +295,27 @@
       "funfact": "I have a pug named Gus that hasn't paid rent in 7 years.",
       "bio": "I am an ex-axe throwing general manager who decided to holster my hatchets in order to embark on a new career in web development. I have enjoyed building reliable, attentive teams and creating a positive environment for customers to enjoy and am looking forward to combining my past experience with my new found skills in the technology world. Every day that goes by of learning, reassures me that I have made the best possible decision for my future.",
       "specialthanks": "All the incredible instructors and classmates that have assisted in my learning and growth in the Software Development world. I will be forever grateful to you all!"
+    },
+    {
+      "name": "Chris Douglass",
+      "linkedin": "https://www.linkedin.com/in/cdouglass516/",
+      "github": "https://github.com/cdouglass516",
+      "personalwebsite": "www.chrisdouglass.me",
+      "email": "chris@chrisdouglass.me",
+      "capstone": "https://github.com/cdouglass516/capstone",
+      "funfact": "I once was given a ride around the Miami Sea Aquarium on the back of Flipper(one of many Flippers)",
+      "bio": "My name is Chris Douglass; I have been a software engineer for 12 years. After an employee decided to relocate their entire software team, I decided to attend NSS to learn better front-end skills. I enjoy solving problems and using technology to make tasks easier. When I am not coding I enjoy spending time with my son and wife.",
+      "specialthanks": "Andy Collins and Brenda Long"
+    },
+{
+      "name": "Meg McGregor",
+      "linkedin": "https://www.linkedin.com/in/meg-mcgregor-33384496/",
+      "github": "https://github.com/MegMcGregor",
+      "personalwebsite": "",
+      "email": "megmcgregor1@gmail.com",
+      "capstone": "https://github.com/MegMcGregor/front-end-capstone-project",
+      "funfact": "Orcas are my favorite animal because they're communicative, social, and playful. I want to say that they're my spirit animal, but I can't take credit for their magnificence.",
+      "bio": "I have a background in visual art and retail. After years of managing a small business, I saw how the right software can help a business thrive and web development sparked my interest. For me, coding is a fantastic mashup of creative and highly-technical work.",
+      "specialthanks": "Thank you to all the instructors for being so attentive and encouraging."
     }
   ]
