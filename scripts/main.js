@@ -123,3 +123,5 @@ function techs(list) {
       </div>`;
   });
 };
+
+// Do you see this?
