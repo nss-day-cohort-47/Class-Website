@@ -9,7 +9,7 @@
         {
             "id": 2,
             "name": "React.js",
-            "image": "reactlogo.png",
+            "image": "logo_react.png",
             "link": "https://reactjs.org/"
         },
         {
@@ -72,8 +72,9 @@
             "id": 16,
             "name": "SQL Server",
             "image": "sqlserver.png",
-            "link": "https://www.microsoft.com/en-us/sql-server/sql-server-2017"
+            "link": "https://www.microsoft.com/en-us/sql-server/sql-server-2019"
         },
+        
         {
             "id": 17,
             "name": "Visual Studio Code",
@@ -86,7 +87,12 @@
             "image": "csharp.png",
             "link": "https://docs.microsoft.com/en-us/dotnet/csharp/"
         },
-
+        {
+            "id": 19,
+            "name": "JSON",
+            "image": "JSON.png",
+            "link": "https://www.json.org/json-en.html"
+        },
         {
             "id": 20,
             "name": "Visual Studio",
