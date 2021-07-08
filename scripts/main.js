@@ -1,3 +1,4 @@
+
 // initialize the tool-tip plugin for Bootstrap4
 $(function () {
     $('[data-toggle="tooltip"]').tooltip()
@@ -16,9 +17,9 @@ function cohortMembers(list) {
   data.forEach(function (item) {
     let studentContact = `<div class="studentContact">`
     //if student doesn't have a portfolio site then don't display the icon
-    if (item.portfolio != null) {
+    if (item.personalwebsite != null) {
 
-      studentContact += `<a href=${item.portfolio} target="_blank">
+      studentContact += `<a href=${item.personalwebsite} target="_blank">
       <i class="fas fa-globe fa-2x contactIcons"></i>
       </a>`
     }
@@ -32,7 +33,7 @@ function cohortMembers(list) {
     //if student doesn't have a linkedin site then don't display the icon
     if (item.linkedIn != null) {
 
-      studentContact += `<a href=${item.linkedIn} target="_blank">
+      studentContact += `<a href=${item.linkedin} target="_blank">
       <i class="fab fa-linkedin fa-2x contactIcons"></i>
       </a>`
     }
@@ -46,12 +47,12 @@ function cohortMembers(list) {
     studentContact += `</div>`
 
     let studentInfo = `<div class="col-md-3 cohortMems">
-          <img class="card-img-top" src="images/classmates/${item.proImg}" alt="${item.firstName} ${item.lastName}" data-toggle="modal" data-target="#cohortMember${item.id}" style="cursor:pointer;">
+          // <img class="card-img-top" src="images/classmates/${item.proImg}" alt="${item.name}" data-toggle="modal" data-target="#cohortMember${item.id}" style="cursor:pointer;">
           <div class="card-body">
-            <h4 class="card-title title-font">${item.firstName} ${item.lastName}</h4>`
+            <h4 class="card-title title-font">${item.name}</h4>`
     //if student didn't provide a reelthemin quote then nothing is displayed
-    if (item.reelThemIn != null) {
-      studentInfo += `<p class="card-text">${item.reelThemIn}</p>`
+    if (item.funfact != null) {
+      studentInfo += `<p class="card-text">${item.funfact}</p>`
     }
     studentInfo += studentContact
 
@@ -70,13 +71,13 @@ function cohortMembers(list) {
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-           <h5 class="modal-title title-font" id="cohortMember${item.id}Label">${item.firstName} ${item.lastName}</h5>
+           <h5 class="modal-title title-font" id="cohortMember${item.id}Label">${item.name}</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
-            <center><img src="images/classmates/${item.funImg}" alt="${item.firstName} ${item.lastName} fun"/></center><br>
+            // <center><img src="images/classmates/${item.funImg}" alt="${item.name} fun"/></center><br>
 
             `
 
@@ -123,3 +124,37 @@ function techs(list) {
       </div>`;
   });
 };
+
+
+const getJoke = () => {
+  return fetch("https://icanhazdadjoke.com/", {
+    method: "Get",
+    headers: {
+      Accept: "application/json",
+    },
+  }).then((response) => response.json())
+  //*  BELOW NOT NEEDED if not using parsed data
+  .then(parsedResponse => {
+      console.log(parsedResponse);
+      return parsedResponse;
+  })
+};
+
+const Joke = (jokeObject) => {
+  return `
+      <section class="joke">
+       
+            <h2>${jokeObject.joke}</h2>
+        
+      </section>
+    `;
+};
+const dadJoke = () => {
+  const postElement = document.querySelector(".joke");
+  getJoke().then(joke => {
+      
+      postElement.innerHTML = Joke(joke);
+  });
+}
+document.querySelector(".joke-button")
+.addEventListener("click", dadJoke);
