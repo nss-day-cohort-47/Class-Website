@@ -4,6 +4,31 @@ $(function () {
     $('[data-toggle="tooltip"]').tooltip()
 })
 
+//DEFINE SHUFFLE FUNCTION
+const shuffle = (arr) => {
+  //start at the end of the list...
+  let currentIndex = arr.length, holdThisForASec, numberOutOfAHat;
+  //as long as there are still more to choose from...
+  while (0 !== currentIndex) {
+      //get a random index, rounding down
+      //bc math.random produces an int between 0 & 1.
+      numberOutOfAHat = Math.floor(Math.random() * currentIndex);
+      //decrement
+      currentIndex -= 1;
+      //let's say our current index is 25 right now
+      // store the value of the object at index 25 in the var tempvalue
+      holdThisForASec = arr[currentIndex];
+      //then you can set the val of the object at the current index position
+      //equal to the val of the object at the random index position
+      arr[currentIndex] = arr[numberOutOfAHat];
+      //then we can se the val of the object that used to be at our random index
+      //equal to the value of the object at index 25 which we stored in the temp var
+      arr[numberOutOfAHat] = holdThisForASec;
+      // and we'll keep switchin em around until we get to index 0,
+  }
+  //then return the array!
+  return arr;
+}
 
 $.ajax({
   url: "data/cohort.json"
@@ -14,6 +39,7 @@ $.ajax({
 
 function cohortMembers(list) {
   let data = list.cohort;
+  data = shuffle(data)
   data.forEach(function (item) {
     let studentContact = `<div class="studentContact">`
     //if student doesn't have a portfolio site then don't display the icon
