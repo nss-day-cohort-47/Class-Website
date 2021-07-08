@@ -1,4 +1,5 @@
-[
+{
+    "cohort":[
     {
         "id": "1",
         "name": "Traye Johnson",
@@ -377,3 +378,4 @@
         "funImg": "MegMcGregor_fun.jpg"
     }
 ]
+}
