@@ -57,7 +57,7 @@ function cohortMembers(list) {
       </a>`
     }
     //if student doesn't have a linkedin site then don't display the icon
-    if (item.linkedIn != null) {
+    if (item.linkedin != null) {
 
       studentContact += `<a href=${item.linkedin} target="_blank">
       <i class="fab fa-linkedin fa-2x contactIcons"></i>
