@@ -8,15 +8,15 @@
         },
         {
             "id": 2,
-            "name": "AngularJS",
-            "image": "angularjs.png",
-            "link": "https://angularjs.org/"
+            "name": "React.js",
+            "image": "logo_react.png",
+            "link": "https://reactjs.org/"
         },
         {
             "id": 3,
-            "name": "jQuery",
-            "image": "jquery.png",
-            "link": "https://jquery.com/"
+            "name": "ADO.NET",
+            "image": "ado-net.jpg",
+            "link": "https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-overview"
         },
         {
             "id": 4,
@@ -32,9 +32,9 @@
         },
         {
             "id": 6,
-            "name": "Grunt",
-            "image": "grunt.png",
-            "link": "https://gruntjs.com/"
+            "name": ".NET 5",
+            "image": "Net5-color.png",
+            "link": "https://docs.microsoft.com/en-us/dotnet/core/dotnet-five"
         },
         {
             "id": 7,
@@ -49,35 +49,19 @@
             "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3"
         },
         {
-            "id": 9,
-            "name": "Sass",
-            "image": "sass.png",
-            "link": "https://sass-lang.com/"
-        },
-        {
             "id": 10,
             "name": "Bootstrap",
             "image": "bootstrap.png",
             "link": "https://getbootstrap.com/"
         },
-        {
-            "id": 11,
-            "name": "Browserify",
-            "image": "browserify.png",
-            "link": "http://browserify.org/"
-        },
+
         {
             "id": 12,
             "name": "Firebase",
             "image": "firebase.png",
             "link": "https://firebase.google.com"
         },
-        {
-            "id": 13,
-            "name": "Materialize",
-            "image": "materialize.png",
-            "link": "http://materializecss.com/"
-        },
+
         {
             "id": 14,
             "name": "NPM",
@@ -85,17 +69,12 @@
             "link": "https://www.npmjs.com/"
         },
         {
-            "id": 15,
-            "name": "SQLite3",
-            "image": "sqlite.png",
-            "link": "https://www.sqlite.org/"
-        },
-        {
             "id": 16,
             "name": "SQL Server",
             "image": "sqlserver.png",
-            "link": "https://www.microsoft.com/en-us/sql-server/sql-server-2017"
+            "link": "https://www.microsoft.com/en-us/sql-server/sql-server-2019"
         },
+        
         {
             "id": 17,
             "name": "Visual Studio Code",
@@ -110,9 +89,9 @@
         },
         {
             "id": 19,
-            "name": ".NET Core",
-            "image": "dotnetcore.png",
-            "link": "https://www.microsoft.com/net/"
+            "name": "JSON",
+            "image": "JSON.png",
+            "link": "https://www.json.org/json-en.html"
         },
         {
             "id": 20,
@@ -125,18 +104,6 @@
             "name": ".Net MVC",
             "image": "aspnetMVC.png",
             "link": "https://www.asp.net/mvc"
-        },
-        {
-            "id": 22,
-            "name": "ES lint",
-            "image": "eslint.png",
-            "link": "https://eslint.org/"
-        },
-        {
-            "id": 23,
-            "name": "UglifyJs",
-            "image": "uglify.png",
-            "link": "https://www.npmjs.com/package/uglifyjs"
         }
     ]
 }
