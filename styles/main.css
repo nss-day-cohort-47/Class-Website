@@ -60,15 +60,9 @@ blockquote{
     height: 50px;
 }
 
-
-.jumbotron.jumbotron-fluid{
-    background: none;
-   }
-.jumbotron.jumbotron-fluid img{
-    background: none;
-    width:100%;
-    margin-top: -80px;
-   }
+.top-class{
+    margin-top: 10em;
+}
 
 main {
     margin-bottom: 20px;

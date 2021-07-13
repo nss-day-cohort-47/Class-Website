@@ -114,9 +114,14 @@ function cohortMembers(list) {
       
     ${item.bio}
     </div>
-    <center><button type="button" data-dismiss="modal" class="backButton btn btn-outline-primary title-font bottom" aria-label="Close">
-      Back
-              </button></center>
+    
+    <center>
+    <a type="button" href="" class="backButton btn btn-outline-primary title-font bottom" aria-label="Resume">
+      Resume
+    </a>
+    <a type="button" href="${item.capstone}" class="backButton btn btn-outline-primary title-font bottom" aria-label="Capstone">
+      Capstone
+              </a></center>
             
           </div >
         </div >
