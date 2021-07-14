@@ -1,13 +1,12 @@
 p {
-  font-family: 'Barlow', sans-serif;
+  font-family: 'Open Sans Extra Bold', 'Monsterrat Regular', Arial, Helvetica, sans-serif;
 }
 
 html, body {
     max-width: 100%;
     overflow-x: hidden;
-    background: url("../images/background.jpg") fixed no-repeat;
     background-size: 100%;
-    background-color: black;
+    background-color: white;
 }
 
 blockquote{
@@ -31,14 +30,34 @@ blockquote{
   margin-right: 2em;
 }
 
+.nav-link{
+    color: #DF8027!important;
+    border-color: #DF8027!important;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
 #cohort22{
     display: inline-block;
-    color: #238193;
+    color: #009CA3;
 }
 
 #jumbheader{
     box-shadow: 2px 2px 2px rgb(167, 166, 166);
-    background-color: #238193!important;
+    background-color: #009CA3!important;
     color: lightgray;
 
 }
@@ -47,13 +66,14 @@ blockquote{
     padding-top: 10px;
     font-weight: bold;
     height: 50px;
-    color: white;
+    color: black;
 
 }
 
 .title-font {
     text-align: center;
     vertical-align: middle;
+    color: black;
 }
 
 .logo{
@@ -76,6 +96,10 @@ main {
     width: 100%;
     overflow-y: hidden;
     overflow-x: hidden;
+  }
+
+  .copyright{
+      text-align: center;
   }
 
 .row{
@@ -148,7 +172,7 @@ main {
   }
 
   .contactIcons{
-      color: #238193;
+      color: #009CA3;
   }
   .contactIcons:hover{
       transform: scale(1.2);
@@ -156,7 +180,7 @@ main {
 
   .modal-header{
     background-color: lightgray!important;
-    color: #238193;
+    color: #009CA3;
   }
 
   .modal-body img{
@@ -250,4 +274,9 @@ button{
         padding-right: none;
       }
 
+      .joke__body{
+          display: flex;
+          align-items: center;
+          background-color: #009CA3;
+      }
 }
