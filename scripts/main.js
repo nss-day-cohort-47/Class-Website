@@ -97,24 +97,24 @@ function cohortMembers(list) {
         <div class="modal fade" id="cohortMember${item.id}" tabindex="-1" role="dialog" aria-labelledby="cohortMember${item.id}Label" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
-            <div class="modal-header">
-           <h5 class="modal-title title-font" id="cohortMember${item.id}Label">${item.name}</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-            <center><img src="images/classmates/${item.proImg}" alt="${item.name} fun"/></center><br>
+            
+          <div class="modal-body">
+          <center><img src="images/classmates/${item.proImg}" alt="${item.name} fun"/></center><br>
+          <h2 class="modal-title title-font" id="cohortMember${item.id}Label">${item.first}</h2>
+          <h2 class="modal-title title-font" id="cohortMember${item.id}Label">${item.last}</h2>
+          <h5>A bit about ${item.first}...</h5>
 
             `
 
-      studentInfo += studentContact
+      studentInfo
 
 
       studentInfo += `
-      
-    ${item.bio}
+      ${item.bio}
+      <h5>Fun Fact</h5>
+    ${item.funfact}
     </div>
+    ${studentContact}
     <center><button type="button" data-dismiss="modal" class="backButton btn btn-outline-primary title-font bottom" aria-label="Close">
       Back
               </button></center>

@@ -202,25 +202,25 @@ main {
 
 .modal-body {
     display: block;
-}
+  }
 
-.studentContact {
-    text-align: center;
-    display: flex;
-    justify-content: space-evenly;
-    -webkit-justify-content: space-evenly;
-    margin-bottom: .75rem;
-}
+  .studentContact{
+      text-align: center;
+      display: flex;
+      justify-content: space-evenly;
+      -webkit-justify-content: space-evenly;
+      margin-bottom: .75rem;
+  }
 
-.contactIcons {
-    color: #009CA3;
-}
+  .contactIcons{
+      color: #DF8027
+      ;
+  }
+  .contactIcons:hover{
+      transform: scale(1.2);
+  }
 
-.contactIcons:hover {
-    transform: scale(1.2);
-}
-
-.modal-header {
+  .modal-header{
     background-color: lightgray!important;
     color: #009CA3;
 }
