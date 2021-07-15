@@ -141,11 +141,13 @@ main {
     bottom: 0;
     object-fit: contain;
     opacity: 0;
+    width: 100%;
     transition: opacity .2s;
 }
 
 .card-img-top-baby:hover {
     opacity: 1;
+    width: 100%;
 }
 
 .col, [class*="col-"] {

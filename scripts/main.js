@@ -73,8 +73,8 @@ function cohortMembers(list) {
     studentContact += `</div>`
 
     let studentInfo = `<div class="col-md-3 cohortMems">
-          <img class="Sirv card-img-top" src="images/classmates/${item.proImg}" alt="${item.name}" data-toggle="modal" data-target="#cohortMember${item.id}" style="cursor:pointer;">
-          <img class="Sirv card-img-top-baby" src="images/classmates/${item.funImg}" alt="${item.name}" data-toggle="modal" data-target="#cohortMember${item.id}" style="cursor:pointer;">
+          <img class="card-img-top" src="images/classmates/${item.proImg}" alt="${item.name}" data-toggle="modal" data-target="#cohortMember${item.id}" style="cursor:pointer;">
+          <img class="card-img-top-baby" src="images/classmates/${item.funImg}" alt="${item.name}" data-toggle="modal" data-target="#cohortMember${item.id}" style="cursor:pointer;">
           <div class="card-body">
             <h4 class="card-title title-font">${item.name}</h4>`
     //if student didn't provide a reelthemin quote then nothing is displayed
