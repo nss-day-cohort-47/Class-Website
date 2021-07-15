@@ -172,7 +172,8 @@ main {
   }
 
   .contactIcons{
-      color: #009CA3;
+      color: #DF8027
+      ;
   }
   .contactIcons:hover{
       transform: scale(1.2);
