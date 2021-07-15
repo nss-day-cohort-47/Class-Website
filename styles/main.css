@@ -56,11 +56,9 @@ blockquote{
 }
 
 #jumbheader{
-    box-shadow: 2px 2px 2px rgb(167, 166, 166);
     background-color: #009CA3!important;
-    color: lightgray;
-
 }
+
 .header-text{
     margin: 0 auto;
     padding-top: 10px;
@@ -79,16 +77,6 @@ blockquote{
 .logo{
     height: 50px;
 }
-
-
-.jumbotron.jumbotron-fluid{
-    background: none;
-   }
-.jumbotron.jumbotron-fluid img{
-    background: none;
-    width:100%;
-    margin-top: -80px;
-   }
 
 main {
     margin-bottom: 20px;
@@ -129,7 +117,7 @@ main {
 
 .technos, .words{
     margin-top: -55px;
-    background: white;
+    background: #009CA3;
     padding:20px;
     border-radius: 20px;
 }
@@ -197,7 +185,7 @@ main {
 .navbar.navbar-light.bg-light.footer{
     margin-top:10px;
     font-size: 1em;
-    background-color: #238193!important;
+    background-color: #009CA3!important;
     color: white;
 }
 
@@ -206,20 +194,20 @@ main {
 }
 
 #demo-date a {
-    color: #238193!important;
+    color: #009CA3!important;
 }
 
 button{
     cursor: pointer;
 }
 .btn-outline-primary{
-    color: #238193!important;
-    border-color: #238193!important;
+    color: #009CA3!important;
+    border-color: #009CA3!important;
 }
 
 .btn-outline-primary:hover{
     color: white!important;
-    background-color: #238193!important;
+    background-color: #009CA3!important;
 }
 
 /* adjusts size of contact icons depending on size of card */
@@ -235,16 +223,27 @@ button{
       }    
 }
 
+ .jumbotron.jumbotron-fluid{
+    background-color: #009CA3!important;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 200px;
+    }
+
+    .joke__body{
+        display: flex;
+        align-items: center;
+        background-color: #009CA3;
+    }
+
+    body { padding-top: 70px; }
+
 
 @media (max-width: 900px) {
 
     /* body {
         background: url("../assets/images/bg.jpg") repeat;
     } */
-    .jumbotron.jumbotron-fluid img{
-        background: white;
-        margin-top:30px;
-       }
        .jumbotron.jumbotron-fluid.sm-width{
         width: 100%;
     }
@@ -261,7 +260,7 @@ button{
       }
       .modal-content {
         width: 100%;
-    }
+     }
        .modal-body img{
         width: 100%;
       }
@@ -274,9 +273,4 @@ button{
         padding-right: none;
       }
 
-      .joke__body{
-          display: flex;
-          align-items: center;
-          background-color: #009CA3;
-      }
 }
