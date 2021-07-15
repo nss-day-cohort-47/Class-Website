@@ -171,7 +171,7 @@ const Joke = (jokeObject) => {
   return `
       <section class="joke">
        
-            <h2>${jokeObject.joke}</h2>
+            <p>${jokeObject.joke}</p>
         
       </section>
     `;
