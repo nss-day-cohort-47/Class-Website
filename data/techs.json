@@ -9,13 +9,13 @@
         {
             "id": 2,
             "name": "React.js",
-            "image": "logo_react.png",
+            "image": "react.png",
             "link": "https://reactjs.org/"
         },
         {
             "id": 3,
             "name": "ADO.NET",
-            "image": "ado-net.jpg",
+            "image": "ado-net.png",
             "link": "https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-overview"
         },
         {
@@ -33,7 +33,7 @@
         {
             "id": 6,
             "name": ".NET 5",
-            "image": "Net5-color.png",
+            "image": "Net5.png",
             "link": "https://docs.microsoft.com/en-us/dotnet/core/dotnet-five"
         },
         {
@@ -90,13 +90,13 @@
         {
             "id": 19,
             "name": "JSON",
-            "image": "JSON.png",
+            "image": "json.png",
             "link": "https://www.json.org/json-en.html"
         },
         {
             "id": 20,
             "name": "Visual Studio",
-            "image": "VisualStudio.png",
+            "image": "visualstudio.png",
             "link": "https://www.visualstudio.com/vs/"
         },
         {

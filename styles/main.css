@@ -18,7 +18,7 @@ blockquote {
 
 .navbar {
     background-color: rgb(55, 55, 56);
-    padding: 20px;
+    padding: 10px;
 }
 
 .navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
@@ -79,13 +79,11 @@ blockquote {
     color: #009CA3;
 }
 
-#jumbheader {
-    box-shadow: 2px 2px 2px rgb(167, 166, 166);
+#jumbheader{
     background-color: #009CA3!important;
-    color: lightgray;
 }
 
-.header-text {
+.header-text{
     margin: 0 auto;
     padding-top: 10px;
     font-weight: bold;
@@ -150,11 +148,19 @@ main {
     box-shadow: none;
 }
 
-.technos, .words {
+.tech-stack{
+    background: #009CA3;
+    margin: 10px;
+}
+
+.technos, .words{
     margin-top: -55px;
-    background: white;
-    padding: 20px;
-    border-radius: 20px;
+    background: #009CA3;
+    padding: 20px 40px 20px 40px;
+}
+
+.thankyousection{
+    padding: 20px 40px 20px 40px;
 }
 
 .techs {
@@ -239,7 +245,7 @@ main {
 .navbar.navbar-light.bg-light.footer {
     margin-top: 10px;
     font-size: 1em;
-    background-color: #238193!important;
+    background-color: #009CA3!important;
     color: white;
 }
 
@@ -248,21 +254,20 @@ main {
 }
 
 #demo-date a {
-    color: #238193!important;
+    color: #009CA3!important;
 }
 
 button {
     cursor: pointer;
 }
-
-.btn-outline-primary {
-    color: #238193!important;
-    border-color: #238193!important;
+.btn-outline-primary{
+    color: #009CA3!important;
+    border-color: #009CA3!important;
 }
 
 .btn-outline-primary:hover {
     color: white!important;
-    background-color: #238193!important;
+    background-color: #009CA3!important;
 }
 
 /* adjusts size of contact icons depending on size of card */
@@ -278,6 +283,26 @@ button {
         font-size: 2em!important;
     }
 }
+
+ .jumbotron.jumbotron-fluid{
+    background-color: #009CA3!important;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 200px;
+    }
+
+    .joke__body{
+        display: inline-block;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        padding: 20px 40px 20px 40px;
+        background-color: #009CA3;
+    }
+
+    body { padding-top: 70px; }
+
 
 @media (max-width: 900px) {
     /* body {
@@ -296,9 +321,9 @@ button {
     }
     .header-text h2 {
         font-size: 1.5em;
-        margin-top: -10px;
-    }
-    .modal-body {
+        margin-top: 10px;
+       }
+       .modal-body{
         display: block;
     }
     .modal-content {
@@ -314,10 +339,6 @@ button {
     }
     .navbar-brand img {
         padding-right: none;
-    }
-    .joke__body {
-        display: flex;
-        align-items: center;
-        background-color: #009CA3;
-    }
+      }
+
 }
