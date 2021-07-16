@@ -101,7 +101,7 @@ function cohortMembers(list) {
           <div class="modal-body">
           <center class="modal-photos">
           <img class="background" src="images/backgroundimg.png" alt="polygon"/>
-          
+          <img class="profile" src="images/classmates/${item.proImg}" alt="${item.name} fun"/>
           </center><br>
           <h2 class="modal-title " id="cohortMember${item.id}Label">${item.first}</h2>
           <h2 class="modal-lasttitle " id="cohortMember${item.id}Label">${item.last}</h2>
