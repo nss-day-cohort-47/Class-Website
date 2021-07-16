@@ -18,7 +18,7 @@ blockquote{
 
 .navbar{
     background-color: rgb(55, 55, 56);
-    padding: 20px;
+    padding: 10px;
 }
 .navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top{
     background: white !important;
@@ -115,11 +115,19 @@ main {
     box-shadow: none;
 }
 
+.tech-stack{
+    background: #009CA3;
+    margin: 10px;
+}
+
 .technos, .words{
     margin-top: -55px;
     background: #009CA3;
-    padding:20px;
-    border-radius: 20px;
+    padding: 20px 40px 20px 40px;
+}
+
+.thankyousection{
+    padding: 20px 40px 20px 40px;
 }
 
 .techs{
@@ -231,8 +239,12 @@ button{
     }
 
     .joke__body{
-        display: flex;
+        display: inline-block;
+        flex-wrap: wrap;
         align-items: center;
+        text-align: center;
+        width: 100%;
+        padding: 20px 40px 20px 40px;
         background-color: #009CA3;
     }
 
@@ -253,7 +265,7 @@ button{
        }
        .header-text h2{
         font-size: 1.5em;
-        margin-top: -10px;
+        margin-top: 10px;
        }
        .modal-body{
         display: block;
