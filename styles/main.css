@@ -226,9 +226,20 @@ main {
       transform: scale(1.2);
   }
 
-  .modal-header{
-    background-color: lightgray!important;
+  div.modal-content{
+      border: solid #009CA3 6px ;
+}
+
+
+
+h1.modal-lasttitle{
     color: #009CA3;
+}
+
+img.modal-profile-image{
+    margin-right:5px;
+    margin-left: auto;
+    display:block;
 }
 
 .modal-body img {
