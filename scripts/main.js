@@ -99,12 +99,12 @@ function cohortMembers(list) {
           <div class="modal-content">
             
           <div class="modal-body">
-          <div class="modal-photo" src="images/techs/backgroundimg.png" alt="polygon">
-          <img class="modal-profile-image" src="images/classmates/${item.proImg}" alt="${item.name} fun"/>
-          </div>
-          <br>
-          <h1 class="modal-title " id="cohortMember${item.id}Label">${item.first}</h1>
-          <h1 class="modal-lasttitle " id="cohortMember${item.id}Label">${item.last}</h1>
+          <center class="modal-photos">
+          <img class="background" src="images/backgroundimg.png" alt="polygon"/>
+          
+          </center><br>
+          <h2 class="modal-title " id="cohortMember${item.id}Label">${item.first}</h2>
+          <h2 class="modal-lasttitle " id="cohortMember${item.id}Label">${item.last}</h2>
           <h5>A bit about ${item.first}...</h5>
 
             `
@@ -118,10 +118,9 @@ function cohortMembers(list) {
     ${item.funfact}
     </div>
     ${studentContact}
-    <center>
-      <button type="button" data-dismiss="modal" class="backButton btn btn-outline-primary title-font bottom" aria-label="Close"> View Resume </button>
-      <button type="button" data-dismiss="modal" class="backButton btn btn-outline-primary title-font bottom" aria-label="Close">View Capstone</button>
-    </center>
+    <center><button type="button" data-dismiss="modal" class="backButton btn btn-outline-primary title-font bottom" aria-label="Close">
+      Back
+              </button></center>
             
           </div >
         </div >

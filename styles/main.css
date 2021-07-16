@@ -235,10 +235,34 @@ main {
       transform: scale(1.2);
   }
 
+  center.bkgr{
+    background-image: url('backgroundimg.png');
+  }
+  /* img.profile{
+      position: relative;
+    margin-right:0;
+    margin-left: auto;
+    display:block;
+  } */
+  img.background{
+    margin-right:0;
+    margin-left: auto;
+    display:block;
+  }
+
+  center.modal-photos {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  
+
   div.modal-content{
       border: solid #009CA3 6px ;
 }
-
+h2.modal-lasttitle{
+    color: #009CA3;
+}
 
 
 h1.modal-lasttitle{
