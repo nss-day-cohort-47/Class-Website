@@ -1,5 +1,5 @@
 p {
-  font-family: 'Open Sans Extra Bold', 'Monsterrat Regular', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans Extra Bold', 'Monsterrat Regular', Arial, Helvetica, sans-serif;
 }
 
 html, body {
@@ -9,28 +9,31 @@ html, body {
     background-color: white;
 }
 
-blockquote{
+blockquote {
     margin-left: 40px;
     margin-right: 40px;
     background-color: #ddd;
     padding: 2em;
 }
 
-.navbar{
+.navbar {
     background-color: rgb(55, 55, 56);
     padding: 10px;
 }
-.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top{
+
+.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
     background: white !important;
 }
-.navbar-brand{
+
+.navbar-brand {
     display: flex;
 }
+
 .nav-spacing {
-  margin-right: 2em;
+    margin-right: 2em;
 }
 
-.nav-link{
+.nav-link {
     color: #DF8027!important;
     border-color: #DF8027!important;
     display: inline-block;
@@ -47,10 +50,31 @@ blockquote{
     font-size: 1rem;
     line-height: 1.5;
     border-radius: .25rem;
-    transition: background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
-#cohort22{
+.nav-link:hover {
+    color: #ffffff!important;
+    background-color: #DF8027!important;
+    border-color: #DF8027!important;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+#cohort22 {
     display: inline-block;
     color: #009CA3;
 }
@@ -65,7 +89,6 @@ blockquote{
     font-weight: bold;
     height: 50px;
     color: black;
-
 }
 
 .title-font {
@@ -74,8 +97,18 @@ blockquote{
     color: black;
 }
 
-.logo{
+.logo {
     height: 50px;
+}
+
+.jumbotron.jumbotron-fluid {
+    background: none;
+}
+
+.jumbotron.jumbotron-fluid img {
+    background: none;
+    width: 100%;
+    margin-top: -80px;
 }
 
 main {
@@ -84,32 +117,32 @@ main {
     width: 100%;
     overflow-y: hidden;
     overflow-x: hidden;
-  }
+}
 
-  .copyright{
-      text-align: center;
-  }
+.copyright {
+    text-align: center;
+}
 
-.row{
+.row {
     justify-content: center;
 }
 
-.navbar-collapse{
+.navbar-collapse {
     justify-content: flex-end;
     font-weight: bold;
     text-transform: uppercase;
 }
 
-.col-md-3.cohortMems{
+.col-md-3.cohortMems {
     border: 1px solid lightgray;
-    border-radius:10px;
+    border-radius: 10px;
     box-shadow: 2px 2px 2px lightgray;
     margin: 10px;
     margin-bottom: 25px;
     background: white;
 }
 
-.col-sm-2.technologies{
+.col-sm-2.technologies {
     border: none;
     border-radius: none;
     box-shadow: none;
@@ -130,32 +163,50 @@ main {
     padding: 20px 40px 20px 40px;
 }
 
-.techs{
+.techs {
     width: 70px;
     margin: 20px 0px;
-  }
+}
 
-.words{
-    padding:50px;
+.words {
+    padding: 50px;
 }
 
 .no-gutters {
     margin-right: 0;
     margin-left: 0;
-  }
+}
 
-.card-img-top{
+.card-img-top {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-  }
+}
 
-.col,
-[class*="col-"] {
+.card-img-top-baby {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    object-fit: contain;
+    opacity: 0;
+    width: 100%;
+    transition: opacity .2s;
+}
+
+.card-img-top-baby:hover {
+    opacity: 1;
+    width: 100%;
+}
+
+.col, [class*="col-"] {
     padding-right: 0;
     padding-left: 0;
-  }
+}
 
-.modal-body{
+.modal-body {
     display: block;
   }
 
@@ -168,7 +219,8 @@ main {
   }
 
   .contactIcons{
-      color: #009CA3;
+      color: #DF8027
+      ;
   }
   .contactIcons:hover{
       transform: scale(1.2);
@@ -177,21 +229,21 @@ main {
   .modal-header{
     background-color: lightgray!important;
     color: #009CA3;
-  }
+}
 
-  .modal-body img{
+.modal-body img {
     width: 50%;
     height: 50%;
     box-shadow: 3px 3px 5px #cacaca;
     border-radius: 10px;
-  }
+}
 
-  .backButton{
-      margin-bottom: 1.5rem;
-  }
+.backButton {
+    margin-bottom: 1.5rem;
+}
 
-.navbar.navbar-light.bg-light.footer{
-    margin-top:10px;
+.navbar.navbar-light.bg-light.footer {
+    margin-top: 10px;
     font-size: 1em;
     background-color: #009CA3!important;
     color: white;
@@ -205,7 +257,7 @@ main {
     color: #009CA3!important;
 }
 
-button{
+button {
     cursor: pointer;
 }
 .btn-outline-primary{
@@ -213,22 +265,23 @@ button{
     border-color: #009CA3!important;
 }
 
-.btn-outline-primary:hover{
+.btn-outline-primary:hover {
     color: white!important;
     background-color: #009CA3!important;
 }
 
 /* adjusts size of contact icons depending on size of card */
-@media (min-width: 992px) and (max-width: 1200px){
-    .fa-3x{
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .fa-3x {
         font-size: 2.5em!important;
-      }
+    }
 }
 
-@media (min-width: 768px) and (max-width: 991px){
-    .fa-3x{
+@media (min-width: 768px) and (max-width: 991px) {
+    .fa-3x {
         font-size: 2em!important;
-      }    
+    }
 }
 
  .jumbotron.jumbotron-fluid{
@@ -252,36 +305,39 @@ button{
 
 
 @media (max-width: 900px) {
-
     /* body {
         background: url("../assets/images/bg.jpg") repeat;
     } */
-       .jumbotron.jumbotron-fluid.sm-width{
+    .jumbotron.jumbotron-fluid img {
+        background: white;
+        margin-top: 30px;
+    }
+    .jumbotron.jumbotron-fluid.sm-width {
         width: 100%;
     }
-       .header-text{
+    .header-text {
         margin: 0 auto;
         height: 30px;
-       }
-       .header-text h2{
+    }
+    .header-text h2 {
         font-size: 1.5em;
         margin-top: 10px;
        }
        .modal-body{
         display: block;
-      }
-      .modal-content {
+    }
+    .modal-content {
         width: 100%;
-     }
-       .modal-body img{
+    }
+    .modal-body img {
         width: 100%;
-      }
-      main {
+    }
+    main {
         margin-bottom: 100px;
         margin-top: -50px;
         width: 100%
-      }
-      .navbar-brand img{
+    }
+    .navbar-brand img {
         padding-right: none;
       }
 

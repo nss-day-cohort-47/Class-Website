@@ -1,7 +1,7 @@
 
 // initialize the tool-tip plugin for Bootstrap4
 $(function () {
-    $('[data-toggle="tooltip"]').tooltip()
+  $('[data-toggle="tooltip"]').tooltip()
 })
 
 //DEFINE SHUFFLE FUNCTION
@@ -10,21 +10,21 @@ const shuffle = (arr) => {
   let currentIndex = arr.length, holdThisForASec, numberOutOfAHat;
   //as long as there are still more to choose from...
   while (0 !== currentIndex) {
-      //get a random index, rounding down
-      //bc math.random produces an int between 0 & 1.
-      numberOutOfAHat = Math.floor(Math.random() * currentIndex);
-      //decrement
-      currentIndex -= 1;
-      //let's say our current index is 25 right now
-      // store the value of the object at index 25 in the var tempvalue
-      holdThisForASec = arr[currentIndex];
-      //then you can set the val of the object at the current index position
-      //equal to the val of the object at the random index position
-      arr[currentIndex] = arr[numberOutOfAHat];
-      //then we can se the val of the object that used to be at our random index
-      //equal to the value of the object at index 25 which we stored in the temp var
-      arr[numberOutOfAHat] = holdThisForASec;
-      // and we'll keep switchin em around until we get to index 0,
+    //get a random index, rounding down
+    //bc math.random produces an int between 0 & 1.
+    numberOutOfAHat = Math.floor(Math.random() * currentIndex);
+    //decrement
+    currentIndex -= 1;
+    //let's say our current index is 25 right now
+    // store the value of the object at index 25 in the var tempvalue
+    holdThisForASec = arr[currentIndex];
+    //then you can set the val of the object at the current index position
+    //equal to the val of the object at the random index position
+    arr[currentIndex] = arr[numberOutOfAHat];
+    //then we can se the val of the object that used to be at our random index
+    //equal to the value of the object at index 25 which we stored in the temp var
+    arr[numberOutOfAHat] = holdThisForASec;
+    // and we'll keep switchin em around until we get to index 0,
   }
   //then return the array!
   return arr;
@@ -74,6 +74,7 @@ function cohortMembers(list) {
 
     let studentInfo = `<div class="col-md-3 cohortMems">
           <img class="card-img-top" src="images/classmates/${item.proImg}" alt="${item.name}" data-toggle="modal" data-target="#cohortMember${item.id}" style="cursor:pointer;">
+          <img class="card-img-top-baby" src="images/classmates/${item.funImg}" alt="${item.name}" data-toggle="modal" data-target="#cohortMember${item.id}" style="cursor:pointer;">
           <div class="card-body">
             <h4 class="card-title title-font">${item.name}</h4>`
     //if student didn't provide a reelthemin quote then nothing is displayed
@@ -83,37 +84,37 @@ function cohortMembers(list) {
     studentInfo += studentContact
 
     //if a student doesn't have a bio, then the learn more button doesn't appear and a modal isn't created
-    if(item.bio != null){
+    if (item.bio != null) {
 
-    studentInfo += `
+      studentInfo += `
             <center><button type="button" class="btn btn-outline-primary title-font bottom" data-toggle="modal" data-target="#cohortMember${item.id}">
-           Learn More!
+           Learn More
           </button></center>
           </div>
         </div>`
-    //modal info
-    studentInfo +=`
+      //modal info
+      studentInfo += `
         <div class="modal fade" id="cohortMember${item.id}" tabindex="-1" role="dialog" aria-labelledby="cohortMember${item.id}Label" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
-            <div class="modal-header">
-           <h5 class="modal-title title-font" id="cohortMember${item.id}Label">${item.name}</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-            <center><img src="images/classmates/${item.proImg}" alt="${item.name} fun"/></center><br>
+            
+          <div class="modal-body">
+          <center><img src="images/classmates/${item.proImg}" alt="${item.name} fun"/></center><br>
+          <h2 class="modal-title title-font" id="cohortMember${item.id}Label">${item.first}</h2>
+          <h2 class="modal-title title-font" id="cohortMember${item.id}Label">${item.last}</h2>
+          <h5>A bit about ${item.first}...</h5>
 
             `
 
-    studentInfo += studentContact
+      studentInfo
 
 
-    studentInfo += `
-      
-    ${item.bio}
+      studentInfo += `
+      ${item.bio}
+      <h5>Fun Fact</h5>
+    ${item.funfact}
     </div>
+    ${studentContact}
     <center><button type="button" data-dismiss="modal" class="backButton btn btn-outline-primary title-font bottom" aria-label="Close">
       Back
               </button></center>
@@ -159,11 +160,11 @@ const getJoke = () => {
       Accept: "application/json",
     },
   }).then((response) => response.json())
-  //*  BELOW NOT NEEDED if not using parsed data
-  .then(parsedResponse => {
+    //*  BELOW NOT NEEDED if not using parsed data
+    .then(parsedResponse => {
       console.log(parsedResponse);
       return parsedResponse;
-  })
+    })
 };
 
 const Joke = (jokeObject) => {
@@ -178,9 +179,9 @@ const Joke = (jokeObject) => {
 const dadJoke = () => {
   const postElement = document.querySelector(".joke");
   getJoke().then(joke => {
-      
-      postElement.innerHTML = Joke(joke);
+
+    postElement.innerHTML = Joke(joke);
   });
 }
 document.querySelector(".joke-button")
-.addEventListener("click", dadJoke);
+  .addEventListener("click", dadJoke);
