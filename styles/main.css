@@ -1,6 +1,16 @@
 p {
-    font-family: 'Open Sans Extra Bold', 'Monsterrat Regular', Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif!important;
 }
+
+.h1, .h2, .h3 {
+    font-family: 'Open Sans', sans-serif!important;
+    margin: 10px;
+}
+
+.h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+font-family: 'Open Sans', sans-serif!important;
+}
+
 
 html, body {
     max-width: 100%;
@@ -154,7 +164,6 @@ main {
 }
 
 .technos, .words{
-    margin-top: -55px;
     background: #009CA3;
     padding: 20px 40px 20px 40px;
 }
@@ -265,7 +274,7 @@ img.modal-profile-image{
 }
 
 #demo-date a {
-    color: #009CA3!important;
+    color: white!important;
 }
 
 button {
@@ -274,11 +283,28 @@ button {
 .btn-outline-primary{
     color: #009CA3!important;
     border-color: #009CA3!important;
+    border-width: 2px;
+}
+
+.joke-button{
+    color: black!important;
+    border-color: #D2E6E4!important;
+    border: 2px solid;
+    background-color: white;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 .btn-outline-primary:hover {
     color: white!important;
     background-color: #009CA3!important;
+}
+
+.joke-button:hover{
+    background-color: #D2E6E4;
 }
 
 /* adjusts size of contact icons depending on size of card */
@@ -312,7 +338,7 @@ button {
         background-color: #009CA3;
     }
 
-    body { padding-top: 70px; }
+    body { padding-top: 50px; }
 
 
 @media (max-width: 900px) {

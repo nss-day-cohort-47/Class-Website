@@ -78,9 +78,9 @@ function cohortMembers(list) {
           <div class="card-body">
             <h4 class="card-title title-font">${item.name}</h4>`
     //if student didn't provide a reelthemin quote then nothing is displayed
-    if (item.funfact != null) {
-      studentInfo += `<p class="card-text">${item.funfact}</p>`
-    }
+    // if (item.funfact != null) {
+    //   studentInfo += `<p class="card-text">${item.funfact}</p>`
+    // }
     studentInfo += studentContact
 
     //if a student doesn't have a bio, then the learn more button doesn't appear and a modal isn't created

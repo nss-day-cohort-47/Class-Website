@@ -9,7 +9,9 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
         integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <style>@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@700;800&display=swap');</style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Open+Sans:wght@700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
@@ -48,9 +50,8 @@
     <div class="jumbotron jumbotron-fluid">
         <div class="header-section-cohort47">
             <h1 class="title-font">WE ARE COHORT 47</h1>
-            <h5 class="title-font">Welcome to the cohort 47 website!
-             We’re excited to meet you.
-            </h5>
+            <h4 id="demo-date"><a href="https://www.eventbrite.com/e/nss-virtual-demo-day-web-development-cohort-47-tickets-163056244617?utm_content=172748062&utm_medium=social&utm_source=linkedin&hss_channel=lcp-6407917"
+                target="_blank">Come see our demos on August 6, 2021!</a></h4>
         </div>
     </div>
 
@@ -60,10 +61,7 @@
             <span class="header-text">
                 <br />
                 <h2 class="title-font">Nashville Software School Cohort 47</h2>
-                <h5 class="title-font">The best cohort ever,  just ask our moms.</h5>
-                        <!-- update href to be the exact link for your demo day's Eventbrite page -->
-                <h5 id="demo-date"><a href="https://www.eventbrite.com/e/nss-virtual-demo-day-web-development-cohort-47-tickets-163056244617?utm_content=172748062&utm_medium=social&utm_source=linkedin&hss_channel=lcp-6407917"
-                target="_blank">Come see our demos on August 6, 2021!</a></h5>
+                <h4 class="title-font">The best cohort ever,  just ask our moms.</h4>
             </span>
             <br />
             <div id="cohort" class="row">
@@ -72,13 +70,12 @@
         </div>
 
         <!-- technology section -->
-        <div id="techsection">
+        <div class="technos" id="techsection">
         <div class="tech-header">
-                <span class="header-text">
                     <h2 class="title-font">Technologies</h2>
-                </span>
         </div>
-              <div class="technos">
+        <br />
+              <div>
                <div id="techs" class="row">
                 <!-- content inserted from the techs.json file -->
               </div>
@@ -87,9 +84,7 @@
 
         <!-- thanks section -->
         <div id="thankyou" class="thankyousection">
-            <span class="header-text">
-                <h1 class="title-font styleHeaders">Thank You!</h1>
-            </span>
+                <h2 class="title-font styleHeaders">Thank You!</h2>
             <div id="thanks">
                 <p>
                     Thank you to our front end instructors (Brenda, Bryan, Bryan F, Red, and Monica) for all the Dad jokes and fun times teaching us how to think like developers.
@@ -107,17 +102,17 @@
         </div>
         <div class="joke__body">
             <span class="header-text">
-            <h1>Jokes </h1>
+            <h2 class="title-font styleHeaders">Jokes </h2>
           </span>
           <br/>
             <H4>We've got developers, and jokes.</H4>
             <br />
-            <button class="joke-button">Get a Dad Joke</button>
             <div class="joke__display-area">
                 <section class="joke">
 
                 </section>
             </div>
+            <button class="joke-button">Get a Dad Joke</button>
         </div>
     </main>
 
