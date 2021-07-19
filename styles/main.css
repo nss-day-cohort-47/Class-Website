@@ -4,13 +4,26 @@ p {
 
 .h1, .h2, .h3 {
     font-family: 'Open Sans', sans-serif!important;
-    margin: 10px;
+    padding: 15px;
+    line-height: normal!important;
 }
 
 .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
 font-family: 'Open Sans', sans-serif!important;
 }
 
+.border-white{
+    border-style: solid;
+    border-color: white;
+    border-width: 15px;
+    border-radius: 20px;
+}
+
+.border-blue{
+    border-style: solid;
+    border-color: #009CA3;
+    border-width: 15px;
+}
 
 html, body {
     max-width: 100%;
@@ -105,6 +118,7 @@ blockquote {
     text-align: center;
     vertical-align: middle;
     color: black;
+    padding-bottom: 5px;
 }
 
 .logo {
@@ -122,8 +136,7 @@ blockquote {
 }
 
 main {
-    margin-bottom: 20px;
-    margin-top: -30px;
+    margin-top: -25px;
     width: 100%;
     overflow-y: hidden;
     overflow-x: hidden;
@@ -165,11 +178,16 @@ main {
 
 .technos, .words{
     background: #009CA3;
-    padding: 20px 40px 20px 40px;
+    padding: 30px 60px 30px 60px;
+}
+
+#thedevelopers{
+    margin-top: 10px;
+    margin-bottom: 25px;
 }
 
 .thankyousection{
-    padding: 20px 40px 20px 40px;
+    padding: 40px 60px 40px 60px;
 }
 
 .techs {
@@ -225,6 +243,10 @@ main {
       justify-content: space-evenly;
       -webkit-justify-content: space-evenly;
       margin-bottom: .75rem;
+  }
+
+  .subhead{
+      color: white;
   }
 
   .contactIcons{
@@ -312,9 +334,8 @@ button {
 
  .jumbotron.jumbotron-fluid{
     background-color: #009CA3!important;
-    padding-top: 20px;
     padding-bottom: 20px;
-    height: 200px;
+    height: 250px;
     }
 
     .joke__body{
@@ -323,11 +344,13 @@ button {
         align-items: center;
         text-align: center;
         width: 100%;
-        padding: 20px 40px 20px 40px;
+        padding: 40px 60px 40px 60px;
         background-color: #009CA3;
     }
 
-    body { padding-top: 50px; }
+    body { 
+        padding-top: 35px; 
+    }
 
 
 @media (max-width: 900px) {
