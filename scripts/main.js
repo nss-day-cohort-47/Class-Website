@@ -193,7 +193,6 @@ const dadJoke = () => {
 document.querySelector(".joke-button")
   .addEventListener("click", dadJoke);
 
-
 //Animation for the header
 document.addEventListener('DOMContentLoaded', function (event) {
   // array with texts to type in typewriter
@@ -240,3 +239,4 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
 
 });
+
