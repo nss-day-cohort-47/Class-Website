@@ -119,9 +119,11 @@ function cohortMembers(list) {
     ${item.funfact}
     </div>
     ${studentContact}
-    <center><button type="button" data-dismiss="modal" class="backButton btn btn-outline-primary title-font bottom" aria-label="Close">
-      Back
-              </button></center>
+    <center>
+    <button type="button" data-dismiss="modal" class="backButton btn btn-outline-primary title-font bottom" >View Resume</button>
+    <button type="button" class="backButton btn btn-outline-primary title-font bottom" href="${item.capstone}">View Capstone</button>
+
+              </center>
             
           </div >
         </div >
