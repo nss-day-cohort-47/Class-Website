@@ -260,11 +260,16 @@ main {
       display: flex;
       justify-content: space-evenly;
       -webkit-justify-content: space-evenly;
+      margin-top: 10px;
       margin-bottom: .75rem;
   }
 
   .subhead{
       color: white;
+  }
+  
+  .fact-section{
+      margin-top: 10px;
   }
 
   .contactIcons{
@@ -301,7 +306,7 @@ main {
    div.modal-bgphoto{
     background-image: url("../images/backgroundimg.png");
     background-repeat: no-repeat;
-    background-size: 275px 325px;
+    background-size: 250px 300px;
     background-position:right;
     
    }
@@ -325,8 +330,8 @@ img.modal-profile-image{
 }
 
 .modal-body img {
-    width: 50%;
-    height: 50%;
+    width: 40%;
+    height: 40%;
     border-radius: 10px;
 }
 
