@@ -97,10 +97,6 @@ blockquote {
     transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
-#cohort22 {
-    display: inline-block;
-    color: #009CA3;
-}
 
 #jumbheader{
     background-color: #009CA3!important;
@@ -114,10 +110,21 @@ blockquote {
     color: black;
 }
 
+.header-content {
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 5px;
+}
+
 .title-font {
     text-align: center;
     vertical-align: middle;
     color: black;
+    align-content: center;
     padding-bottom: 5px;
 }
 
@@ -125,6 +132,17 @@ blockquote {
     height: 50px;
 }
 
+.animation {
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  span {
+    border-right: .05em;
+    color: white;
+    animation: caret 2s steps(1) infinite;
+  }
+  
 .jumbotron.jumbotron-fluid {
     background: none;
 }
