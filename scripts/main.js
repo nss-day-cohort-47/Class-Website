@@ -115,12 +115,13 @@ function cohortMembers(list) {
 
       studentInfo += `
       ${item.bio}
+      <br />
       <h5>Fun Fact</h5>
     ${item.funfact}
     </div>
     ${studentContact}
     <center>
-    <a href=${item.capstone}><button type="button" data-dismiss="modal" class="backButton btn btn-outline-primary title-font bottom" >View Resume</button></a>
+    <a href="${item.resume}" download="resume" target="_blank" type="application/octet-stream"><button type="button" data-dismiss="modal" class="backButton btn btn-outline-primary title-font bottom" >View Resume</button></a>
     <a href=${item.capstone}><button type="button" class="backButton btn btn-outline-primary title-font bottom" >View Capstone</button></a>
 
               </center>
@@ -235,4 +236,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
   }
   // start the text animation
   StartTextAnimation(0);
+
+
+
 });
