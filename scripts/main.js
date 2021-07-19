@@ -99,11 +99,12 @@ function cohortMembers(list) {
           <div class="modal-content">
             
           <div class="modal-body">
+          <div class = "modal-bgphoto">
           <center class="modal-photos">
-          <img class="background" src="images/backgroundimg.png" alt="polygon"/>
           <img class="profile" src="images/classmates/${item.proImg}" alt="${item.name} fun"/>
           </center><br>
           <h2 class="modal-title " id="cohortMember${item.id}Label">${item.first}</h2>
+          </div>
           <h2 class="modal-lasttitle " id="cohortMember${item.id}Label">${item.last}</h2>
           <h5>A bit about ${item.first}...</h5>
 

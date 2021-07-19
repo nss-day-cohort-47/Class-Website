@@ -238,12 +238,14 @@ main {
   center.bkgr{
     background-image: url('backgroundimg.png');
   }
-  /* img.profile{
+
+  img.profile{
       position: relative;
-    margin-right:0;
+    margin-right:0%;
     margin-left: auto;
     display:block;
-  } */
+  }
+
   img.background{
     margin-right:0;
     margin-left: auto;
@@ -254,8 +256,15 @@ main {
     position: relative;
     top: 0;
     left: 0;
+    
   }
-  
+   div.modal-bgphoto{
+    background-image: url("../images/backgroundimg.png");
+    background-repeat: no-repeat;
+    background-size: 275px 325px;
+    background-position:right;
+    
+   }
 
   div.modal-content{
       border: solid #009CA3 6px ;
@@ -278,7 +287,6 @@ img.modal-profile-image{
 .modal-body img {
     width: 50%;
     height: 50%;
-    box-shadow: 3px 3px 5px #cacaca;
     border-radius: 10px;
 }
 
