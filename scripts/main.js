@@ -120,7 +120,7 @@ function cohortMembers(list) {
     </div>
     ${studentContact}
     <center>
-    <a href="${item.resume}" attributes-list download><button type="button" data-dismiss="modal" class="backButton btn btn-outline-primary title-font bottom" >Download Resume</button></a>
+    <a href="./images/resumes/${item.resume}" download="${item.resume}"><button type="button" class="backButton btn btn-outline-primary title-font bottom" >Download Resume</button></a>
     <a href=${item.capstone}><button type="button" class="backButton btn btn-outline-primary title-font bottom" >View Capstone</button></a>
 
               </center>
@@ -218,13 +218,13 @@ document.addEventListener('DOMContentLoaded', function (event) {
   }
   // start a typewriter animation for a text in the dataText array
   function StartTextAnimation(i) {
-    if (typeof dataText[i] === 'undefined') {
+    if ((typeof dataText[i]).toString() === 'undefined') {
       setTimeout(function () {
         StartTextAnimation(0);
-      }, 20000);
+      }, 7500);
     }
     // check if dataText[i] exists
-    if (i < dataText[i].length) {
+    if (i < dataText.length) {
       // text exists! start typewriter animation
       typeWriter(dataText[i], 0, function () {
         // after callback (and whole text has been animated), start next text
