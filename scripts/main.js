@@ -1,4 +1,3 @@
-
 // initialize the tool-tip plugin for Bootstrap4
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
@@ -121,7 +120,7 @@ function cohortMembers(list) {
     </div>
     ${studentContact}
     <center>
-    <a href="${item.resume}" attributes-list download><button type="button" data-dismiss="modal" class="backButton btn btn-outline-primary title-font bottom" >View Resume</button></a>
+    <a href="${item.resume}" attributes-list download><button type="button" data-dismiss="modal" class="backButton btn btn-outline-primary title-font bottom" >Download Resume</button></a>
     <a href=${item.capstone}><button type="button" class="backButton btn btn-outline-primary title-font bottom" >View Capstone</button></a>
 
               </center>
@@ -212,14 +211,14 @@ document.addEventListener('DOMContentLoaded', function (event) {
       }, 100);
     }
     // text finished, call callback if there is a callback function
-    else if (typeof fnCallback == 'function') {
+    else if (typeof fnCallback === 'function') {
       // call callback after timeout
       setTimeout(fnCallback, 700);
     }
   }
   // start a typewriter animation for a text in the dataText array
   function StartTextAnimation(i) {
-    if (typeof dataText[i] == 'undefined') {
+    if (typeof dataText[i] === 'undefined') {
       setTimeout(function () {
         StartTextAnimation(0);
       }, 20000);
