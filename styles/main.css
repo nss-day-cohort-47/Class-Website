@@ -286,6 +286,9 @@ main {
     margin-left: auto;
     display:block;
   }
+  .profile{
+  border: solid #D2E6E4 2px;
+}
 
   center.modal-photos {
     position: relative;
@@ -327,6 +330,7 @@ img.modal-profile-image{
 
 .backButton {
     margin-bottom: 1.5rem;
+    margin-top: .5rem;
 }
 
 .navbar.navbar-light.bg-light.footer {
@@ -432,6 +436,7 @@ button {
        }
        .modal-body{
         display: block;
+        padding: 18px;
     }
     .modal-content {
         width: 100%;
