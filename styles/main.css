@@ -133,17 +133,6 @@ blockquote {
     height: 50px;
 }
 
-.animation {
-    color: white;
-    text-transform: uppercase;
-  }
-  
-  span {
-    border-right: .05em;
-    color: white;
-    animation: caret 2s steps(1) infinite;
-  }
-  
 .jumbotron.jumbotron-fluid {
     background: none;
 }
@@ -297,6 +286,9 @@ main {
     margin-left: auto;
     display:block;
   }
+  .profile{
+  border: solid #D2E6E4 2px;
+}
 
   center.modal-photos {
     position: relative;
@@ -338,6 +330,7 @@ img.modal-profile-image{
 
 .backButton {
     margin-bottom: 1.5rem;
+    margin-top: .5rem;
 }
 
 .navbar.navbar-light.bg-light.footer {
@@ -399,6 +392,8 @@ button {
     }
 }
 
+
+
  .jumbotron.jumbotron-fluid{
     background-color: #009CA3!important;
     padding-bottom: 20px;
@@ -416,7 +411,7 @@ button {
     }
 
     body { 
-        padding-top: 35px; 
+        padding-top: 30px; 
     }
 
 
@@ -441,18 +436,18 @@ button {
        }
        .modal-body{
         display: block;
+        padding: 18px;
     }
     .modal-content {
         width: 100%;
     }
-    .modal-body img {
-        width: 100%;
-    }
+
     main {
-        margin-bottom: 100px;
+        /* margin-bottom: 100px; */
         margin-top: -50px;
         width: 100%
     }
+
     .navbar-brand img {
         padding-right: none;
       }
