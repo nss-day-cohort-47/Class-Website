@@ -1,24 +1,15 @@
-# Class Website Template Repo
+# Nashville Software School Cohort 47 
 
-This is a simple template for NSS students to use to create their class website. Employers are looking for a simple website where they can easily see each students' quick summary and links to Github, LinkedIn, and website. Your class website should look nice and professional, but no need to get fancy. ;)
+Our cohort wanted to work on this website as a team. We were all determined to make an impact - so we formed smaller teams (wireframe, data organization, coding, design, content development, project management and QA), each with tasks to accomplish. Usually a website with 29 developers might be too many chefs in the kitchen, but with a lot of teamwork, some organization and the best cohort - this site came together quickly/seamlessly. 
 
-## To get started on the class website
+## ERD
 
-1. Clone repo
-1. Change the remote origin to a repo on your cohort's Github organization
-1. Update `data/cohort.json` with student information
-1. Update images with your class's photos
-1. Update `data/tech.json` with your cohort's tech stack
-1. Update NSS Eventbrite link to the specific link for your class's demo day. Reach out to Mandy if you need the link.
-1. Update the "Thanks" section in `index.html` to reflect who your cohort would like to thank.
-1. Change anything else with styling you'd like!
+<img width="731" alt="Screen Shot 2021-07-23 at 1 35 01 PM" src="https://user-images.githubusercontent.com/78938657/126820159-a44d055f-33a3-4fb7-a4e9-9ce48570d01a.png">
 
-This template was written using jQuery and Ajax, so the syntax might look a little different than what you're used to. If you have any questions about how to use the template or make changes to it, please reach out to an instructor and we'd be happy to help walk you through it.
+## Wireframes
 
-## To Deploy
+<img width="859" alt="Screen Shot 2021-07-23 at 1 34 24 PM" src="https://user-images.githubusercontent.com/78938657/126820162-0cb9c59e-c8cf-4c4e-b63c-b34ed8883c67.png">
 
-Deploy to Github Pages - no need for a custom domain.
+## Many Thanks
 
-[Directions to deploy to Github Pages](https://www.codecademy.com/articles/f1-u3-github-pages)
-
-Mandy will then take your Github Pages URL and set up a redirect link - that redirect link is what employers will get (example: [www.nashss.com/cohort28](www.nashss.com/cohort28)). 
+Thank you to our amazing instructors and everyone at Nashville Software School
