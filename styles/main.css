@@ -4,13 +4,26 @@ p {
 
 .h1, .h2, .h3 {
     font-family: 'Open Sans', sans-serif!important;
-    margin: 10px;
+    padding: 15px;
+    line-height: normal!important;
 }
 
 .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
 font-family: 'Open Sans', sans-serif!important;
 }
 
+.border-white{
+    border-style: solid;
+    border-color: white;
+    border-width: 15px;
+    border-radius: 20px;
+}
+
+.border-blue{
+    border-style: solid;
+    border-color: #009CA3;
+    border-width: 15px;
+}
 
 html, body {
     max-width: 100%;
@@ -85,10 +98,6 @@ blockquote {
     transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
-#cohort22 {
-    display: inline-block;
-    color: #009CA3;
-}
 
 #jumbheader{
     background-color: #009CA3!important;
@@ -102,10 +111,22 @@ blockquote {
     color: black;
 }
 
+.header-content {
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 5px;
+}
+
 .title-font {
     text-align: center;
     vertical-align: middle;
     color: black;
+    align-content: center;
+    padding-bottom: 5px;
 }
 
 .logo {
@@ -123,8 +144,7 @@ blockquote {
 }
 
 main {
-    margin-bottom: 20px;
-    margin-top: -30px;
+    margin-top: -25px;
     width: 100%;
     overflow-y: hidden;
     overflow-x: hidden;
@@ -166,11 +186,16 @@ main {
 
 .technos, .words{
     background: #009CA3;
-    padding: 20px 40px 20px 40px;
+    padding: 30px 60px 30px 60px;
+}
+
+#thedevelopers{
+    margin-top: 10px;
+    margin-bottom: 25px;
 }
 
 .thankyousection{
-    padding: 20px 40px 20px 40px;
+    padding: 40px 60px 40px 60px;
 }
 
 .techs {
@@ -225,7 +250,16 @@ main {
       display: flex;
       justify-content: space-evenly;
       -webkit-justify-content: space-evenly;
+      margin-top: 10px;
       margin-bottom: .75rem;
+  }
+
+  .subhead{
+      color: white;
+  }
+  
+  .fact-section{
+      margin-top: 10px;
   }
 
   .contactIcons{
@@ -236,20 +270,67 @@ main {
       transform: scale(1.2);
   }
 
-  .modal-header{
-    background-color: lightgray!important;
+  center.bkgr{
+    background-image: url('backgroundimg.png');
+  }
+
+  img.profile{
+      position: relative;
+    margin-right:0%;
+    margin-left: auto;
+    display:block;
+  }
+
+  img.background{
+    margin-right:0;
+    margin-left: auto;
+    display:block;
+  }
+  .profile{
+  border: solid #D2E6E4 2px;
+}
+
+  center.modal-photos {
+    position: relative;
+    top: 0;
+    left: 0;
+    
+  }
+   div.modal-bgphoto{
+    background-image: url("../images/backgroundimg.png");
+    background-repeat: no-repeat;
+    background-size: 250px 300px;
+    background-position:right;
+    
+   }
+
+  div.modal-content{
+      border: solid #009CA3 6px ;
+}
+h2.modal-lasttitle{
     color: #009CA3;
 }
 
+
+h1.modal-lasttitle{
+    color: #009CA3;
+}
+
+img.modal-profile-image{
+    margin-right:5px;
+    margin-left: auto;
+    display:block;
+}
+
 .modal-body img {
-    width: 50%;
-    height: 50%;
-    box-shadow: 3px 3px 5px #cacaca;
+    width: 40%;
+    height: 40%;
     border-radius: 10px;
 }
 
 .backButton {
     margin-bottom: 1.5rem;
+    margin-top: .5rem;
 }
 
 .navbar.navbar-light.bg-light.footer {
@@ -311,11 +392,12 @@ button {
     }
 }
 
+
+
  .jumbotron.jumbotron-fluid{
     background-color: #009CA3!important;
-    padding-top: 20px;
     padding-bottom: 20px;
-    height: 200px;
+    height: 250px;
     }
 
     .joke__body{
@@ -324,11 +406,13 @@ button {
         align-items: center;
         text-align: center;
         width: 100%;
-        padding: 20px 40px 20px 40px;
+        padding: 40px 60px 40px 60px;
         background-color: #009CA3;
     }
 
-    body { padding-top: 50px; }
+    body { 
+        padding-top: 30px; 
+    }
 
 
 @media (max-width: 900px) {
@@ -352,18 +436,18 @@ button {
        }
        .modal-body{
         display: block;
+        padding: 18px;
     }
     .modal-content {
         width: 100%;
     }
-    .modal-body img {
-        width: 100%;
-    }
+
     main {
-        margin-bottom: 100px;
+        /* margin-bottom: 100px; */
         margin-top: -50px;
         width: 100%
     }
+
     .navbar-brand img {
         padding-right: none;
       }

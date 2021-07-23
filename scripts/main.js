@@ -1,4 +1,3 @@
-
 // initialize the tool-tip plugin for Bootstrap4
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
@@ -99,9 +98,13 @@ function cohortMembers(list) {
           <div class="modal-content">
             
           <div class="modal-body">
-          <center><img src="images/classmates/${item.proImg}" alt="${item.name} fun"/></center><br>
-          <h2 class="modal-title title-font" id="cohortMember${item.id}Label">${item.first}</h2>
-          <h2 class="modal-title title-font" id="cohortMember${item.id}Label">${item.last}</h2>
+          <div class = "modal-bgphoto">
+          <center class="modal-photos">
+          <img class="profile" src="images/classmates/${item.proImg}" alt="${item.name} fun"/>
+          </center><br>
+          <h2 class="modal-title " id="cohortMember${item.id}Label">${item.first}</h2>
+          </div>
+          <h2 class="modal-lasttitle " id="cohortMember${item.id}Label">${item.last}</h2>
           <h5>A bit about ${item.first}...</h5>
 
             `
@@ -111,13 +114,16 @@ function cohortMembers(list) {
 
       studentInfo += `
       ${item.bio}
-      <h5>Fun Fact</h5>
+      <br />
+      <h5 class="fact-section">Fun Fact</h5>
     ${item.funfact}
     </div>
     ${studentContact}
-    <center><button type="button" data-dismiss="modal" class="backButton btn btn-outline-primary title-font bottom" aria-label="Close">
-      Back
-              </button></center>
+    <center>
+    <a href="./images/resumes/${item.resume}" download="${item.resume}"><button type="button" class="backButton btn btn-outline-primary title-font bottom" >Download Resume</button></a>
+    <a href=${item.capstone}><button type="button" class="backButton btn btn-outline-primary title-font bottom" >View Capstone</button></a>
+
+              </center>
             
           </div >
         </div >
@@ -162,7 +168,6 @@ const getJoke = () => {
   }).then((response) => response.json())
     //*  BELOW NOT NEEDED if not using parsed data
     .then(parsedResponse => {
-      console.log(parsedResponse);
       return parsedResponse;
     })
 };
@@ -185,4 +190,51 @@ const dadJoke = () => {
 }
 document.querySelector(".joke-button")
   .addEventListener("click", dadJoke);
+
+//Animation for the header
+document.addEventListener('DOMContentLoaded', function (event) {
+  // array with texts to type in typewriter
+  var dataText = ["COHORT 47.", "INNOVATORS.", "PIONEERS.", "COLLABORATORS.", "DEVELOPERS."];
+
+  // type one text in the typwriter
+  // keeps calling itself until the text is finished
+  function typeWriter(text, i, fnCallback) {
+    // chekc if text isn't finished yet
+    if (i < (text.length)) {
+      // add next character to h1
+      document.querySelector(".animation").innerHTML = text.substring(0, i + 1) + '<span aria-hidden="true"></span>';
+
+      // wait for a while and call this function again for next character
+      setTimeout(function () {
+        typeWriter(text, i + 1, fnCallback)
+      }, 100);
+    }
+    // text finished, call callback if there is a callback function
+    else if (typeof fnCallback === 'function') {
+      // call callback after timeout
+      setTimeout(fnCallback, 700);
+    }
+  }
+  // start a typewriter animation for a text in the dataText array
+  function StartTextAnimation(i) {
+    if ((typeof dataText[i]).toString() === 'undefined') {
+      setTimeout(function () {
+        StartTextAnimation(0);
+      }, 7500);
+    }
+    // check if dataText[i] exists
+    if (i < dataText.length) {
+      // text exists! start typewriter animation
+      typeWriter(dataText[i], 0, function () {
+        // after callback (and whole text has been animated), start next text
+        StartTextAnimation(i + 1);
+      });
+    }
+  }
+  // start the text animation
+  StartTextAnimation(0);
+
+
+
+});
 
