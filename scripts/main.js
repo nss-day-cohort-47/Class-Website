@@ -122,8 +122,9 @@ function cohortMembers(list) {
     <center>
     <a href="./images/resumes/${item.resume}" download="${item.resume}"><button type="button" class="backButton btn btn-outline-primary title-font bottom" >Download Resume</button></a>
     <a href=${item.capstone}><button type="button" class="backButton btn btn-outline-primary title-font bottom" >View Capstone</button></a>
-
-              </center>
+    <button type="button" data-dismiss="modal" class="closeModal btn btn-outline-primary title-font bottom" aria-label="Close">
+    X
+              </button>
             
           </div >
         </div >

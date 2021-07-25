@@ -322,6 +322,12 @@ img.modal-profile-image{
     display:block;
 }
 
+.closeModal{
+    position: absolute;
+    left: 0.5em;
+    top: 0.5em;
+}
+
 .modal-body img {
     width: 40%;
     height: 40%;
