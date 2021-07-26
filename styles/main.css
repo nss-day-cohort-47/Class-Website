@@ -392,9 +392,23 @@ button {
     }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 991px) {
     .fa-3x {
         font-size: 2em!important;
+    }
+    .modal-bgphoto{
+        background-size: 220px 250px!important;
+    }
+
+    .technos, .words {
+        padding: 20px!important;
+    }
+    .thankyousection{
+        padding: 20px!important;
+    }
+
+    .header-content{
+        flex-wrap: wrap;
     }
 }
 
@@ -418,7 +432,7 @@ button {
 
     body { 
         padding-top: 30px; 
-    }
+        }
 
 
 @media (max-width: 900px) {
