@@ -392,7 +392,7 @@ button {
     }
 }
 
-@media (min-width: 400px) and (max-width: 991px) {
+@media (max-width: 991px) {
     .fa-3x {
         font-size: 2em!important;
     }
