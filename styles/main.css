@@ -144,6 +144,7 @@ blockquote {
 }
 
 main {
+    background-image: url("../images/main.png");
     margin-top: -25px;
     width: 100%;
     overflow-y: hidden;
@@ -344,6 +345,27 @@ img.modal-profile-image{
     font-size: 1em;
     background-color: #009CA3!important;
     color: white;
+}
+
+footer{
+    background-image: url("../images/main.png");
+    padding-bottom: 5px;
+}
+
+.modal-content{
+    background-image: url("../images/main.png");
+}
+
+.footer-font {
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+    align-content: center;
+}
+
+.joke{
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 #demo-date {
