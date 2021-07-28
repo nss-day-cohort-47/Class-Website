@@ -352,6 +352,10 @@ footer{
     padding-bottom: 5px;
 }
 
+.modal-content{
+    background-image: url("../images/main.png");
+}
+
 .footer-font {
     text-align: center;
     vertical-align: middle;
